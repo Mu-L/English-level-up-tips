@@ -649,6 +649,7 @@ test("the scheduled link audit checks authoritative sources and retires the 193-
   ]) {
     expect(workflow).toContain(retiredUrl);
   }
+  expect(workflow).toContain("if grep -REni");
   expect(workflow).toContain("A retired URL from the 193-197 failure series has returned.");
 });
 
