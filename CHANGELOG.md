@@ -4,6 +4,12 @@ All notable project-level changes are documented here. Content pages retain thei
 
 ## Unreleased
 
+### 2026-09-07 recovery safety refresh
+
+#### Changed
+
+- Rechecked the WHO suicide-prevention and mental-health-at-work boundaries, updated the Recovery sources date, and kept the chapter's capacity modes explicitly non-clinical.
+
 ### 2026-09-03 maintenance pass
 
 #### Changed
@@ -11,6 +17,7 @@ All notable project-level changes are documented here. Content pages retain thei
 - Added automatic cleanup for stale external-link failure issues after a successful scheduled check, so the issue list reflects current regressions instead of old resolved alerts.
 - Expanded the bilingual Relationships chapter from communication advice into a fuller account of repair, restitution, reconciliation, power asymmetry, meaningful consent, withdrawal, and safe exit; upgraded the private Relationship Conversation Card to preserve those boundaries and observable follow-through.
 - Rebuilt the bilingual Decision-Making chapter and Decision Brief around information gaps versus value conflicts, decision authority, affected people, meaningful consent, disconfirming evidence, and observable evidence, cost, safety, and responsibility gates.
+- Rebuilt the bilingual Recovery chapter and Recovery Reset around non-clinical capacity modes, bounded support agreements, minimum necessary disclosure, staged return-to-work load tests, next-day cost, and explicit safety, basic-life, task, boundary, and review gates, with current WHO source boundaries.
 - Updated the pinned PDF parser to `pypdf` 6.16.2, clearing the known denial-of-service advisories affecting the previous 6.10.0 build dependency while retaining deterministic bilingual PDF output; PDF manifests now identify the parser version that produced their semantic digest.
 
 ### 2026-09-03 editorial and release hygiene

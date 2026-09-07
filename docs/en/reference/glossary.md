@@ -1,7 +1,7 @@
 ---
 title: Glossary of Terms and Methods
 description: Define the guide's core vocabulary, evidence standards, tool entry points, and reading paths so ideas can transfer between chapters.
-updated: 2026-09-03
+updated: 2026-09-07
 ---
 
 # Glossary of Terms and Methods
@@ -102,6 +102,9 @@ Find the task you are facing, then follow “definition → evidence → next st
 | --- | --- | --- |
 | **Boundary** | What I will do to protect myself and state a consequence when something happens | [Relationships](../threads/part-2/relationships.md) |
 | **Recovery** | Restore safety, body, relationships, and agency before efficiency and growth | [Recovery](../threads/part-2/recovery.md) |
+| **Recovery mode** | A safety, reduced-load, or rebuilding load chosen from current safety, basic care, and agency; a life-recording term rather than a clinical rating | [Recovery](../threads/part-2/recovery.md) |
+| **Return-to-work load test** | Increase one variable such as duration, complexity, responsibility, or exposure, then inspect same-day completion and next-day cost | [Recovery](../threads/part-2/recovery.md) |
+| **Support agreement** | State what a supporter may do, must not replace, when to escalate, and how control returns as risk falls | [Recovery](../threads/part-2/recovery.md) · [Life Practice Toolkit](../templates/life-practice-toolkit.md) |
 | **Minimum order** | A safe action and visible result that remain repeatable during disorder | [Life Practice Toolkit](../templates/life-practice-toolkit.md) |
 | **Minimum viable day** | A version of the day that preserves safety, one minimum output, and a cue for the next step at the capacity available | [Daily System](../threads/part-4/daily-system.md) |
 | **Capacity budget** | A rough estimate that includes time, attention, body, and responsibility rather than time alone | [Daily System](../threads/part-4/daily-system.md) |

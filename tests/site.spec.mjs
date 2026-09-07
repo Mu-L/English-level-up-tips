@@ -577,6 +577,59 @@ test("decisions separate uncertainty from values and name authority, disconfirmi
   }
 });
 
+test("recovery separates safety, reduced load, and rebuilding before a bounded return to work", () => {
+  const cases = [
+    {
+      chapter: "threads/part-2/recovery.md",
+      toolkit: "templates/life-practice-toolkit.md",
+      glossary: "reference/glossary.md",
+      chapterTerms: [
+        "先选择今天的恢复模式",
+        "复工不是开关，而是一次逐级试载",
+        "求助要具体，也要保留主体性",
+        "安全 / 降档 / 重建",
+        "WHO：Mental health at work",
+      ],
+      toolkitTerms: [
+        "今天的模式：安全 / 降档 / 重建",
+        "支持者不能替我做",
+        "第二天需要检查的代价",
+        "复查日期与有权暂停的人",
+      ],
+      glossaryTerms: ["恢复模式", "复工试载", "支持协议"],
+    },
+    {
+      chapter: "en/threads/part-2/recovery.md",
+      toolkit: "en/templates/life-practice-toolkit.md",
+      glossary: "en/reference/glossary.md",
+      chapterTerms: [
+        "Choose Today's Recovery Mode First",
+        "Returning to Work Is a Load Test, Not a Switch",
+        "Ask for Specific Help Without Giving Away Your Life",
+        "Safety / reduced load / rebuilding",
+        "WHO: Mental health at work",
+      ],
+      toolkitTerms: [
+        "Today's mode: safety / reduced load / rebuilding",
+        "What a supporter must not do in my place",
+        "Next-day cost to check",
+        "Review date and person authorised to pause",
+      ],
+      glossaryTerms: ["Recovery mode", "Return-to-work load test", "Support agreement"],
+    },
+  ];
+
+  for (const { chapter, toolkit, glossary, chapterTerms, toolkitTerms, glossaryTerms } of cases) {
+    const chapterText = readFileSync(resolve(process.cwd(), "docs", chapter), "utf8");
+    const toolkitText = readFileSync(resolve(process.cwd(), "docs", toolkit), "utf8");
+    const glossaryText = readFileSync(resolve(process.cwd(), "docs", glossary), "utf8");
+    for (const term of chapterTerms) expect(chapterText, chapter).toContain(term);
+    for (const term of toolkitTerms) expect(toolkitText, toolkit).toContain(term);
+    for (const term of glossaryTerms) expect(glossaryText, glossary).toContain(term);
+    expect(chapterText).toContain("sources_checked: 2026-09-07");
+  }
+});
+
 for (const [route, heading] of routes) {
   test(`${route} renders`, async ({ page }) => {
     await page.goto(route);

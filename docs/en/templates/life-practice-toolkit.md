@@ -1,7 +1,7 @@
 ---
 title: Life Practice Toolkit
 description: A reusable private worksheet for decisions, attention, relationships, and recovery, preserving facts, values, authority, consent, stop gates, repair actions, and review evidence.
-updated: 2026-09-03
+updated: 2026-09-07
 ---
 
 # Life Practice Toolkit
@@ -127,6 +127,8 @@ Related chapter: [Relationships: Becoming an Adult in Connection](../threads/par
 Safety issue to protect today:
 People I can contact:
 High-risk decision to pause:
+Today's mode: safety / reduced load / rebuilding
+If safety worsens, what will I stop, whom will I contact, and where will I go?
 
 Body:
 - Sleep:
@@ -134,10 +136,28 @@ Body:
 - Light activity I can tolerate:
 - Professional support to consult:
 
+Basic-life floor: food / sleep preparation / necessary care / critical bills and communication
 One smallest task today:
 Evidence of completion:
+Task limit and end time:
+Next-day cost to check:
 What I am allowed not to do today:
 First action after opening the file tomorrow:
+
+Support agreement:
+- What a supporter may do:
+- What a supporter must not do in my place:
+- Signals that require escalation:
+- How accounts, documents, and decisions return as risk falls:
+- Minimum information needed for the safety task:
+
+Return-to-work gates:
+- Safety gate:
+- Basic-life gate:
+- Time-boxed task gate:
+- Boundary communication gate:
+- Review date and person authorised to pause:
+One variable to increase next:
 ```
 
 Related chapter: [Recovery: Catch Yourself Before You Push Forward](../threads/part-2/recovery.md)
