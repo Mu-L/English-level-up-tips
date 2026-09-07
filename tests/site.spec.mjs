@@ -630,6 +630,28 @@ test("recovery separates safety, reduced load, and rebuilding before a bounded r
   }
 });
 
+test("the scheduled link audit checks authoritative sources and retires the 193-197 failure URLs", () => {
+  const workflow = readFileSync(resolve(process.cwd(), ".github/workflows/links.yml"), "utf8");
+  for (const source of [
+    '"ATTRIBUTIONS.md"',
+    '"docs/README.md"',
+    '"docs/en/README.md"',
+    '"docs/threads/**/*.md"',
+    '"docs/en/threads/**/*.md"',
+  ]) {
+    expect(workflow).toContain(source);
+  }
+  for (const retiredUrl of [
+    "scholarspace\\.manoa\\.hawaii\\.edu",
+    "doi\\.org/10\\.64152/10125/66973",
+    "10\\.1076/edre\\.7\\.1\\.403\\.3989",
+    "web\\.archive\\.org/web/20160424221725",
+  ]) {
+    expect(workflow).toContain(retiredUrl);
+  }
+  expect(workflow).toContain("A retired URL from the 193-197 failure series has returned.");
+});
+
 for (const [route, heading] of routes) {
   test(`${route} renders`, async ({ page }) => {
     await page.goto(route);

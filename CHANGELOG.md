@@ -4,6 +4,12 @@ All notable project-level changes are documented here. Content pages retain thei
 
 ## Unreleased
 
+### 2026-09-07 link-audit hardening
+
+#### Changed
+
+- Fixed the failure pattern behind issues 193–197 by limiting Lychee to authoritative documentation sources, excluding generated README/SUMMARY noise, and adding a regression guard for the retired ScholarSpace, invalid DOI, and dead Wayback URLs that caused the historical reports.
+
 ### 2026-09-07 recovery safety refresh
 
 #### Changed
